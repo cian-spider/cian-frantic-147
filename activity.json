@@ -1,0 +1,57 @@
+{
+ "ok": true,
+ "installed": true,
+ "kind": "activity",
+ "source": "chrome",
+ "status": "ok",
+ "schema": "cian.chrome_activity_query.v1",
+ "queried_at": "2026-11-10T09:41:20.161Z",
+ "extension": {
+  "name": "Cian Dogfood Activity Recorder",
+  "id": "hokdifdeibfdgckdbkegmggjcnihhnee",
+  "version": "1.0.0"
+ },
+ "install_id": "cian-dogfood-hl8wg2ll",
+ "activity_query": {
+  "query": "chrome.storage.local.activity",
+  "count": 5,
+  "subjects": [
+   "https://example.com/",
+   "https://gofrantic.com/bounties/147",
+   "https://gofrantic.com/charter",
+   "installed"
+  ]
+ },
+ "activity": [
+  {
+   "at": "2026-11-10T09:40:44.404Z",
+   "kind": "installed",
+   "reason": "onInstalled",
+   "seq": 1
+  },
+  {
+   "at": "2026-11-10T09:40:56.174Z",
+   "kind": "navigation",
+   "seq": 2,
+   "url": "https://gofrantic.com/bounties/147"
+  },
+  {
+   "at": "2026-11-10T09:41:10.555Z",
+   "kind": "navigation",
+   "seq": 3,
+   "url": "https://example.com/"
+  },
+  {
+   "at": "2026-11-10T09:41:15.541Z",
+   "kind": "navigation",
+   "seq": 4,
+   "url": "https://gofrantic.com/charter"
+  },
+  {
+   "seq": 5,
+   "at": "2026-11-10T09:41:20.161Z",
+   "kind": "navigation",
+   "url": "https://gofrantic.com/bounties/147"
+  }
+ ]
+}
