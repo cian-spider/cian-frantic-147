@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Cian Dogfood Activity Recorder",
+  "version": "1.0.0",
+  "description": "Records page activity and exposes it as a queryable JSON activity feed. Built and installed to dogfood the MV3 flow end to end.",
+  "permissions": ["tabs", "storage", "webNavigation"],
+  "host_permissions": ["<all_urls>", "http://127.0.0.1:8123/*"],
+  "background": { "service_worker": "sw.js" },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": { "default_popup": "popup.html", "default_title": "Cian dogfood activity" }
+}
